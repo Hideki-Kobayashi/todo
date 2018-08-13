@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>To-Doリスト</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="">
+    </head>
+    
+<body>
+	<header>
+		<section id="top">
+            <div id="icon">
+                
+                <img id="userimg" src=""/>
+                
+            </div>
+            
+            <div id="user">
+                
+                <div id="logout">
+                    <div id="userleft">
+                        <p id="welcome">ようこそ</p>
+                        <h3></h3>
+                        <p id="mr">さん</p>
+                    </div>
+                    <a id="logoutbtn" type="submit" class="btn btn-lg btn-block pnkbtn" href="">LOGOUT</a>
+                </div>
+                  
+                
+                <div id="login">
+                    <form action="" method="POST">
+                        <div id="formleft">
+                            
+                        </div>
+
+                        <button id="loginbtn" type="submit" class="btn btn-lg btn-block pnkbtn" >LOGIN</button>
+                        
+                    </form>
+                </div>
+                
+            </div>
+		</section>
+
+		<div id="search_box">
+            <form action="" method="POST">
+                <div id="searchleft">
+                    <table id="searchform" style="margin-top:20px;">
+                        
+                    </table>
+                </div>
+				<button id="srchbtn" type="submit"><i class="fas fa-search" id="srchaw"></i></button>
+                {% csrf_token %}
+            </form>
+		</div>
+	</header>
+　
+	<main>
+		<section id="left">
+   			<img id="logo" src="" width="100%">
+		</section>
+
+		<section id="center">
+
+			<div id="now">
+				<form  action="" method="POST">
+				
+					<div class="big_box" style="width:80%;">
+						<input id="chkbox" type="checkbox" name="delete_ids" value="" />
+						<div id="theme">
+							<p></p>
+						</div>
+						<div id="deadline">
+							<p></p>
+						</div>
+						<div id="memo">
+							<p></p>
+						</div>
+					</div>
+                    {% endfor %}
+				<button class="btn btn-lg btn-block pnkbtn" type="submit">完了</button>
+				</form>
+			</div>
+
+		</section>
+
+		<section id="lines">
+			<table style="height:100%; width: 1px; background-color: gray; border-collapse: collapse;">
+				<tr>
+				<td></td>
+				</tr>
+			</table>
+		</section>
+
+		<section id="right">
+
+			<form  action="" method="POST">
+				
+				<button id="regist" type="submit"><i class="fas fa-check" id="fntaw"></i></button>
+			</form>
+		</section>
+
+	</main>
+
+</body>
+</html>

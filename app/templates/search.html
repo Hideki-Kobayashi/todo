@@ -1,0 +1,12 @@
+{% load static %}
+
+<div>
+      {% for item in results %}
+        <div class="main">
+                <h2>{{ item.theme }}</h2>
+                <p>{{ item.memo }}</p>
+        </div>
+      {% endfor %}
+
+</div>
+<a  href="{% url 'app:top' %}">Topページへ戻る</a>
